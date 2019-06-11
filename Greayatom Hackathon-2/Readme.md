@@ -1,1 +1,1 @@
-Project directory for Greyatom hackathon-2
+Project directory for Greyatom Hackathon-2
