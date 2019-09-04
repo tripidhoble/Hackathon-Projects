@@ -1,4 +1,4 @@
-Analytics Vidhya - India ML Hiring Hackathon 2019
+# Analytics Vidhya - India ML Hiring Hackathon 2019
 My solution to AV - ML Hackathon 2019.
 
 Loan Delinquency Prediction
@@ -6,11 +6,11 @@ Loan default prediction is one of the most critical and crucial problem faced by
 
 Given the information like mortgage details, borrowers related details and payment details, our objective is to identify the delinquency status of loans for the next month given the delinquency status for the previous 12 months (in number of months)
 
-Data Description
+# Data Description
 train.zip
 train.zip contains train.csv. train.csv contains the training data with details on loan as described in the last section
 
-Data Dictionary:
+# Data Dictionary:
 
 loan_id	Unique loan ID
 source	Loan origination channel
@@ -33,24 +33,13 @@ m13	target, loan deliquency status (0 = non deliquent, 1 = deliquent)
 test.zip
 test.zip contains test.csv which has details of all loans for which the participants are to submit the delinquency status - 0/1 (not probability)
 
-sample_submission.zip
+# sample_submission.zip
 sample_submission.zip contains the submission format for the predictions against the test set. A single csv needs to be submitted as a solution.
 
-Evaluation Metric
+# Evaluation Metric
 Submissions are evaluated on F1-Score between the predicted class and the observed target.
 
-Approach
+# Approach
 I first visualized the dataset to check if there is any correlation between any columns. Then I plotted various columns to check the behaviour of the dataset. After plotting the graphs, I used LabelEncoder to encode the categorical variables. Then I used Feature Scaling to rescale the dataset. Then I used XGBoost Classifier to train the dataset. I also used GridSearch to select best parameters of the model.
 
-How to use
-Install the dependencies and libraries to get started.
-
-$ pip3 install -r requirements.txt
-Start the Jupyter Server to access the notebook.
-
-$ jupyter notebook
-Or run the Python3 file.
-
-$ python3 ml_hiring_hackathon.py
-F1 Score: 0.35233
-Secured Rank 5 on the leader board.
+## F1 Score: 0.35233
