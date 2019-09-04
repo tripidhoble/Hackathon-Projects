@@ -12,8 +12,8 @@ train.zip contains train.csv. train.csv contains the training data with details 
 
 # Data Dictionary:
 
-loan_id	Unique loan ID
-source	Loan origination channel
+* loan_id	Unique loan ID
+* source	Loan origination channel
 financial_institution	Name of the bank
 interest_rate	Loan interest rate
 unpaid_principal_bal	Loan unpaid principal balance
